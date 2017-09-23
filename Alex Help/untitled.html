@@ -1,0 +1,74 @@
+<html lang="en" class="gr__arosenkranz_github_io"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tweettone</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <div class="heading row align-items-center justify-content-center" data-title="bartondawes" style="background-image: url(&quot;https://images.unsplash.com/photo-1439635465907-6767e177caa2?ixlib=rb-0.3.5&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;s=4fe3478ea8f1a7fcc2412989f0441d5d&quot;);">
+    <div class="col-9">
+      <div class="heading-content">
+        <h1>Tweettone</h1>
+        <h3>Instructions</h3>
+        <ul>
+          <li>Search something on Twitter and it'll print out on the right hand side. (Open up the console and see the returned
+            Twitter data)
+          </li>
+          <li>Open the console, then click on a tweet and see what type of "emotions" are returned for the tweet. We'll be manipulating
+            the display of that tweet depending on the emotion of it.</li>
+        </ul>
+        <button id="background-change" class="btn btn-block btn-lg btn-outline-warning">Change Background</button>
+      </div>
+    </div>
+  </div>
+  <div class="main-body">
+    <div class="container">
+
+      <div class="row align-items-center justify-content-center">
+
+        <div class="col-md-9 ">
+          <form>
+            <div class="form-row justify-content-center tweet-form">
+              <div class="form-group col-md-6 ">
+                <input type="text" class="form-control form-control-lg" id="searchTerm" aria-describedby="searchTerm" placeholder="Enter Twitter Search">
+
+              </div>
+              <div class="form-group col-md-3">
+                <button type="submit" id="search" class="btn btn-outline-dark btn-block btn-lg">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row ">
+          <div class="col-12 text-center">
+            <h2>Now displaying tweets about</h2> 
+            <h3 id="tweet-term">javascript</h3>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          
+            <div class="card-columns" id="tweets"><div class="card tweet"><div class="card-body"><h4 class="card-title">Auth0</h4><h6 class="card-subtitle mb-2 text-muted">Thursday, September 14th 2017, 7:30:03 pm</h6><p class="card-text">Develop an #Angular app from scratch, with serverless #RESTAPI, security, and persistence! 🛠 🅰️ ⏳ #javascript
+→… https://t.co/HtqiBb1lFS</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Microsoft Imagine</h4><h6 class="card-subtitle mb-2 text-muted">Thursday, September 14th 2017, 1:00:01 pm</h6><p class="card-text">#JavaScript is an interpreted, object-based scripting language. Learn the fundamentals: https://t.co/l2IgIDbHVc https://t.co/C9h2EQs4dR</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Microsoft Imagine</h4><h6 class="card-subtitle mb-2 text-muted">Friday, September 15th 2017, 6:00:01 pm</h6><p class="card-text">#TypeScript is a language for application-scale #JavaScript dev! Dive in with this quick-start tutorial:… https://t.co/qr6chEMJBh</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Val Head</h4><h6 class="card-subtitle mb-2 text-muted">Thursday, September 14th 2017, 9:22:12 am</h6><p class="card-text">“What I am very concerned about is that many still don’t see value in being skilled in CSS &amp;amp; HTML.” 
+https://t.co/Dar9iHXGmw</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Visual Studio Code</h4><h6 class="card-subtitle mb-2 text-muted">Thursday, September 7th 2017, 2:19:09 pm</h6><p class="card-text">Try out the new #javascript and @typescriptlang extract method refactoring in our most recent update… https://t.co/QXQiHqoRb1</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">JAY JAMES</h4><h6 class="card-subtitle mb-2 text-muted">Friday, September 15th 2017, 7:41:15 pm</h6><p class="card-text">You were a star today to #Javascript @Jenn_Stowell Thank you! #BigShow #BigLove #TeamWorkMakesTheBigDreamWork ! #1year 💥👊🏻x</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Wes Bos 🔥</h4><h6 class="card-subtitle mb-2 text-muted">Thursday, September 7th 2017, 11:28:24 am</h6><p class="card-text">🔥 The JavaScript Web Payments API is super simple to use and can be used with any existing payment provider https://t.co/HfEHJAbrV4</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Chris Albon</h4><h6 class="card-subtitle mb-2 text-muted">Saturday, September 9th 2017, 10:42:05 pm</h6><p class="card-text">Coding in javascript is like owning a cat: fluffy, cute, pretty self-sufficient, but deep down you know it is plotting your murder.</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Kirk Borne</h4><h6 class="card-subtitle mb-2 text-muted">Saturday, September 9th 2017, 11:44:09 am</h6><p class="card-text">What is the fastest growing programming language? No big surprise, it's #Python: https://t.co/OKhGdMtCS9 #BigData… https://t.co/trjmGeNzl2</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Mathias Bynens</h4><h6 class="card-subtitle mb-2 text-muted">Tuesday, September 12th 2017, 10:14:30 am</h6><p class="card-text">V8 optimizes array operations based on the array’s Elements Kind. Explanation + JavaScript performance tips:… https://t.co/7fsBQmFue9</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Canard PC Hardware</h4><h6 class="card-subtitle mb-2 text-muted">Sunday, September 10th 2017, 9:10:57 am</h6><p class="card-text">Which is the fastest growing programming language? Hint, it's not JavaScript https://t.co/YlybntFEzQ via @techrepublic</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Packt</h4><h6 class="card-subtitle mb-2 text-muted">Friday, September 8th 2017, 9:00:04 pm</h6><p class="card-text">Take advantage of this free @VueJS eBook to build modern #webdev interfaces: https://t.co/lttBofuIjF #JavaScript #UI https://t.co/g878naeauY</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div><div class="card tweet"><div class="card-body"><h4 class="card-title">Women Who Code</h4><h6 class="card-subtitle mb-2 text-muted">Monday, September 11th 2017, 2:45:21 pm</h6><p class="card-text">Explore our list of resources for learning new programming languages https://t.co/kdYwpVkPDP #javascript #node and more.</p><button class="btn btn-block btn-outline-dark analyze">Watson Tonalyze It!</button></div></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="assets/js/app.js"></script>
+
+
+</body></html>

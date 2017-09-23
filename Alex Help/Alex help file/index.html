@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- ================== -->
+  <!-- GIVE YOUR APP A SICK NAME -->
+  <title>Watson Tweet Tone Analyzer</title>
+    <!-- ================== -->
+  <!-- LINK BOOSTRAP STYLESHEET -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Add your own styles in here -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- ================== -->
+
+  <!-- This is a mix between custom styling and Bootstrap -->
+  <!-- Look in style.css for heading styles -->
+  <div class="heading row align-items-center justify-content-center">
+    <!-- Bootstrap -->
+    <div class="col-9">
+      <!-- Custom -->
+      <div class="heading-content">
+        <h1></h1>
+        <h3>Instructions</h3>
+        <ul>
+          <li>Search something on Twitter and it'll print out on the right hand side. (Open up the console and see the returned
+            Twitter data)
+          </li>
+          <li>Open the console, then click on a tweet and see what type of "emotions" are returned for the tweet. We'll be manipulating
+            the display of that tweet depending on the emotion of it.</li>
+        </ul>
+        <!-- YOU'LL BE TYING THIS TO A JQUERY CLICK EVENT TO TRIGGER A BACKGROUND IMAGE CHANGE -->
+        <button id="background-change" class="btn btn-block btn-lg btn-outline-warning">Change Background</button>
+      </div>
+    </div>
+  </div>
+      <!-- THE ABOVE PART IS ALL SET FOR YOU, JUST UNDERSTAND HOW IT LOOKS THE WAY IT LOOKS VIA BOOTSTRAP & THE STYLE.CSS STYLES -->
+      
+
+
+
+      <!-- ================== -->
+
+  <div class="main-body">
+    <div class="container">
+
+      <div class="row align-items-center justify-content-center">
+        
+        <div class="col-md-9">
+          <form>
+          <!-- CREATE A FORM THAT SITS ON A SINGLE LINE (SEE FORM-ROWS IN BOOTSTRAP) -->
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control form-control-lg" id="searchTerm" aria-describedby="searchTerm" placeholder="Enter Twitter Search"></input>
+
+          </div>
+
+          <!-- THIS FORM NEEDS A TEXT <INPUT> TO CAPTURE A TWITTER SEARCH TERM  -->
+
+          <!-- ADD A SUBMIT BUTTON SO ON CLICK, IT'LL TRIGGER A JQUERY EVENT TO CAPTURE THE ABOVE FORM INPUT-->
+            <div class="form-group col-md-3">
+              <button class="btn btn-primary" type="submit" id="searchButton">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row ">
+          <div class="col-12 text-center">
+            <h2>Now displaying tweets about</h2> 
+            <!-- USE JQUERY TO SELECT & UPDATE THIS H3 ON LOAD AND ON NEW TWEET SEARCH TO LET USERS KNOW THE TERM WE'RE DISPLAYING TWEETS FOR  -->
+            <h3 id="tweet-term" ></h3>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          
+            <div class="card-columns" id="tweets">
+              <!-- ALL TWEET CONTENT WILL BE PRINTED OUT IN HERE, LOOK INTO CARDS AND CARD-COLUMNS ON BOOTSTRAP (IT'S A BOOTSTRAP 4 THING) -->
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
